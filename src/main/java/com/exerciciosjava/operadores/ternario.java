@@ -1,4 +1,4 @@
-package com.example.exerciciosjava.operadores;
+package com.exerciciosjava.operadores;
 
 public class ternario {
     public static void main(String[]args){

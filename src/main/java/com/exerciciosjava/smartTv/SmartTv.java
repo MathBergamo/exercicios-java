@@ -1,4 +1,4 @@
-package com.example.exerciciosjava.smartTv;
+package com.exerciciosjava.smartTv;
 
 public class SmartTv {
     boolean ligada=false;

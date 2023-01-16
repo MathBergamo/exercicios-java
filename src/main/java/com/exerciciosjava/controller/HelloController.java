@@ -1,4 +1,4 @@
-package com.example.exerciciosjava.controller;
+package com.exerciciosjava.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
