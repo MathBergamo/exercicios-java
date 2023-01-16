@@ -1,4 +1,4 @@
-package com.example.exerciciosjava.teste;
+package com.exerciciosjava.teste;
 
 public class BoletimEstudantil {
     public static void main(String[] args) {

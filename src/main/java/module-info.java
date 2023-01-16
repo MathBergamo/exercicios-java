@@ -4,8 +4,8 @@ module com.example.exerciciosjava {
 
     requires org.kordamp.bootstrapfx.core;
 
-    opens com.example.exerciciosjava to javafx.fxml;
-    exports com.example.exerciciosjava;
-    exports com.example.exerciciosjava.controller;
-    opens com.example.exerciciosjava.controller to javafx.fxml;
+    opens com.exerciciosjava to javafx.fxml;
+    exports com.exerciciosjava;
+    exports com.exerciciosjava.controller;
+    opens com.exerciciosjava.controller to javafx.fxml;
 }
