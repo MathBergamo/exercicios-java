@@ -1,4 +1,4 @@
-package com.exerciciosjava.smartTv;
+package com.exerciciosjava.DIO.smartTv;
 
 public class usuario {
     public static void main (String[]args) throws Exception{

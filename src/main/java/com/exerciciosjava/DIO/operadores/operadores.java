@@ -1,4 +1,4 @@
-package com.exerciciosjava.operadores;
+package com.exerciciosjava.DIO.operadores;
 
 public class operadores {//Aritmeticos
     public static void main(String[]args){

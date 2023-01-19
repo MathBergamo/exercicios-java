@@ -1,4 +1,4 @@
-package com.exerciciosjava.tiposVariaveis;
+package com.exerciciosjava.DIO.tiposVariaveis;
 
 public class tiposVariaveis {
     public static void main (String[] args) throws Exception {
