@@ -1,4 +1,4 @@
-package com.exerciciosjava.teste;
+package com.exerciciosjava.DIO.teste;
 
 public class MinhaClasse {
     public static void main (String [] args){

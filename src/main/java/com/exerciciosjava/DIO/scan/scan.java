@@ -1,4 +1,4 @@
-package com.exerciciosjava.scan;
+package com.exerciciosjava.DIO.scan;
 import java.util.Locale;
 import java.util.Scanner;
 

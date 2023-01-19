@@ -1,4 +1,4 @@
-package com.exerciciosjava.calculadora;
+package com.exerciciosjava.DIO.calculadora;
 
 public class calculadora {
     /** - Estrelinhas duplas utilizadas para descrição de documentação
