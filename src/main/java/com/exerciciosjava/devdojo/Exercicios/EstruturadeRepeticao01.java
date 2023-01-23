@@ -1,6 +1,6 @@
 package com.exerciciosjava.devdojo.Exercicios;
 
-public class EstruturaFor{
+public class EstruturadeRepeticao01 {
     public static void main(String[] args) {
         //Imprima todos os números pares de 0 até 1000000
         int num = 0;

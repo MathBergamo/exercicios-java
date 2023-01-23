@@ -1,4 +1,4 @@
-package com.exerciciosjava.devdojo.Pratica.EstruturasDeRepeticao;
+package com.exerciciosjava.devdojo.introducao.EstruturasDeRepeticao;
 
 public class Aula06EstruturasDeRepeticao01 {
     public static void main(String[] args) {

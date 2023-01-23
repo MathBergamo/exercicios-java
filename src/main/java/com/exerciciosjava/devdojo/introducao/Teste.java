@@ -1,4 +1,4 @@
-package com.exerciciosjava.devdojo.Pratica;
+package com.exerciciosjava.devdojo.introducao;
 
 public class Teste {
     public static void main(String[] args) {
