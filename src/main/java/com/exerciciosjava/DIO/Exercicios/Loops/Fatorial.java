@@ -13,7 +13,6 @@ public class Fatorial {
                 fatorial *= i - 1;
                 System.out.print(i + " x ");
             }else{
-                fatorial *= i;
                 System.out.print(i + " = ");
             }
         }
