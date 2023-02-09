@@ -12,23 +12,18 @@ public class Ex22 {
         int num = 0;
         boolean primo = true;
 
-        System.out.println("Digite um número: ");
+        System.out.print("Digite um numero: ");
         num = scanner.nextInt();
 
-        int array[] = new int[num];
-
-        for (int i = 1; i < num; i++) {
-            if (num % i == 0) {
-                array[i] = i;
+        for (int i = 2; i < num; i++) {
+            if (num % i == 0){
+                System.out.println("O número " + num + " é divisível por " + i);
                 primo = false;
             }
         }
 
-        if (primo) {
-            System.out.println("O número " + num + " é primo");
-        } else {
-            System.out.println("O número " + num + " não é primo");
-            System.out.println("Números divisíveis: " + array);
+        if(primo){
+            System.out.println("O número " + num + " é primo!");
         }
     }
 }
