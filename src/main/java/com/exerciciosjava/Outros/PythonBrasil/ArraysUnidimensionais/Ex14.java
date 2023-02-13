@@ -14,10 +14,90 @@ import java.util.Scanner;
 
 public class Ex14 {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        ArrayList<Double> pontuacao = new ArrayList<Double>();
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<String> pontuacao = new ArrayList<String>();
 
+        while(true){
+            System.out.println("Você telefonou para a vítima? [sim/não]");
+            String resposta = scanner.next();
+            if (resposta.equalsIgnoreCase("sim")){
+                pontuacao.add(resposta);
+                break;
+            }else if(!resposta.equalsIgnoreCase("sim") && !resposta.equalsIgnoreCase("não")){
+                System.out.println("Digite SIM ou NÃO.");
+            }else{
+                break;
+            }
+        }
 
+        while(true){
+            System.out.println("Você estava no local do crime? [sim/não]");
+            String resposta = scanner.next();
+            if (resposta.equalsIgnoreCase("sim")){
+                pontuacao.add(resposta);
+                break;
+            }else if(!resposta.equalsIgnoreCase("sim") && !resposta.equalsIgnoreCase("não")){
+                System.out.println("Digite SIM ou NÃO.");
+            }else{
+                break;
+            }
+        }
+
+        while(true){
+            System.out.println("Você mora próximo a vítima?? [sim/não]");
+            String resposta = scanner.next();
+            if (resposta.equalsIgnoreCase("sim")){
+                pontuacao.add(resposta);
+                break;
+            }else if(!resposta.equalsIgnoreCase("sim") && !resposta.equalsIgnoreCase("não")){
+                System.out.println("Digite SIM ou NÃO.");
+            }else{
+                break;
+            }
+        }
+
+        while(true){
+            System.out.println("Você devia para a vítima? [sim/não]");
+            String resposta = scanner.next();
+            if (resposta.equalsIgnoreCase("sim")){
+                pontuacao.add(resposta);
+                break;
+            }else if(!resposta.equalsIgnoreCase("sim") && !resposta.equalsIgnoreCase("não")){
+                System.out.println("Digite SIM ou NÃO.");
+            }else{
+                break;
+            }
+        }
+
+        while(true){
+            System.out.println("Você já trabalhou com a vítima? [sim/não]");
+            String resposta = scanner.next();
+            if (resposta.equalsIgnoreCase("sim")){
+                pontuacao.add(resposta);
+                break;
+            }else if(!resposta.equalsIgnoreCase("sim") && !resposta.equalsIgnoreCase("não")){
+                System.out.println("Digite SIM ou NÃO.");
+            }else{
+                break;
+            }
+        }
+
+        int pontos = pontuacao.size();
+
+        switch (pontos){
+            case 0, 1:
+                System.out.println("Inocente");
+                break;
+            case 2:
+                System.out.println("Suspeito!");
+                break;
+            case 3, 4:
+                System.out.println("Cúmplice!");
+                break;
+            case 5:
+                System.out.println("ASSASINO!");
+                break;
+        }
     }
 }
 
