@@ -52,9 +52,7 @@ class Serie implements Comparable<Serie>{
         this.tempoEpisodio = tempoEpisodio;
     }
 
-    public String getNome() {
-        return nome;
-    }
+    public String getNome() { return nome; }
 
     public String getGenero() {
         return genero;
