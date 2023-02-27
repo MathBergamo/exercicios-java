@@ -115,9 +115,11 @@ class ComparatoranoDeCriacaoEnomeEide implements Comparator<LinguagemFavorita>{
 
     @Override
     public int compare(LinguagemFavorita lf1, LinguagemFavorita lf2) {
-        int nome = lf1.nome.compareToIgnoreCase(lf2.nome);
-        int anoDeCriacao = Integer.compare(lf1.anoDeCriacao, lf2.anoDeCriacao);
-        if (nome != 0) return nome;
+        int nome = lf1.nome.compareToIgnoreCase(lf2.nome); //Forma de comparar Strings
+        int anoDeCriacao = Integer.compare(lf1.anoDeCriacao, lf2.anoDeCriacao); //Forma de comparar números inteiros
+        if (nome != 0) return nome; //Essa condição é feita dessa forma, pois o Comparator retorna 1 caso o valor esteja na posição superior.
+                                    //-1 caso seja inferior, ou 0 caso sejam da mesma posição de acordo com o Formato.
+                                    //(O Formato Tree utiliza a ordem natural, pior perfomancec)
         if (anoDeCriacao != 0) return anoDeCriacao;
         return lf1.ide.compareToIgnoreCase(lf2.ide);
     }
