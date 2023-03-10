@@ -1,10 +1,10 @@
-package com.exerciciosjava.DIO.OrangeBackEndInter.EstruturaDeDados;
+package com.exerciciosjava.DIO.OrangeBackEndInter.EstruturaDeDados.ProjetoNo;
 
-public class no {
+public class No {
     private String conteudo;
-    private no proximoNo;
+    private No proximoNo;
 
-    public no(String conteudo) {
+    public No(String conteudo) {
         this.proximoNo = null;
         this.conteudo = conteudo;
     }
@@ -13,21 +13,21 @@ public class no {
         return conteudo;
     }
 
-    public no getProximoNo() {
-        return proximoNo;
-    }
-
     public void setConteudo(String conteudo) {
         this.conteudo = conteudo;
     }
 
-    public void setProximoNo(no proximoNo) {
+    public No getProximoNo() {
+        return proximoNo;
+    }
+
+    public void setProximoNo(No proximoNo) {
         this.proximoNo = proximoNo;
     }
 
     @Override
     public String toString() {
-        return "no{" +
+        return "No{" +
                 "conteudo='" + conteudo + '\'' +
                 '}';
     }
