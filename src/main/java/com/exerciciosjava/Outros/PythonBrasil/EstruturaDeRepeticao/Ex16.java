@@ -6,7 +6,7 @@ A série de Fibonacci é formada pela seqüência 0,1,1,2,3,5,8,13,21,34,55,...
  */
 public class Ex16 {
     public static void main(String[] args) {
-        int num1 = 0, num2 = 1, num3 = 0;
+        int num1, num2 = 1, num3 = 0;
 
         for (int i = 0; i < 16; i++) {
             System.out.println(num3);
