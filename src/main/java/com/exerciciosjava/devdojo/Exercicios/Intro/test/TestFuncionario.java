@@ -1,6 +1,6 @@
-package com.exerciciosjava.devdojo.Exercicios.test;
+package com.exerciciosjava.devdojo.Exercicios.Intro.test;
 
-import com.exerciciosjava.devdojo.Exercicios.dominio.Funcionario;
+import com.exerciciosjava.devdojo.Exercicios.Intro.dominio.Funcionario;
 
 public class TestFuncionario {
     public static void main(String[] args) {
