@@ -1,4 +1,4 @@
-package com.exerciciosjava.devdojo.Exercicios.dominio;
+package com.exerciciosjava.devdojo.Exercicios.Intro.dominio;
 
 public class Funcionario {
     private String nome;

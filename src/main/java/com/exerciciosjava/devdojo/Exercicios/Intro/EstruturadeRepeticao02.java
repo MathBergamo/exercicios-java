@@ -1,4 +1,4 @@
-package com.exerciciosjava.devdojo.Exercicios;
+package com.exerciciosjava.devdojo.Exercicios.Intro;
 
 public class EstruturadeRepeticao02{
     //Dado o valor de um carro, descubra em quantas vezes ele pode ser parcelado.
