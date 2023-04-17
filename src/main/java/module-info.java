@@ -4,6 +4,7 @@ module com.example.exerciciosjava {
 
     requires org.kordamp.bootstrapfx.core;
     requires java.desktop;
+    requires java.sql;
 
     opens com.exerciciosjava to javafx.fxml;
     exports com.exerciciosjava;
