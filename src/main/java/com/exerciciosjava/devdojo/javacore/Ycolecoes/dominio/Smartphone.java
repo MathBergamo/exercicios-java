@@ -2,7 +2,7 @@ package com.exerciciosjava.devdojo.javacore.Ycolecoes.dominio;
 
 public class Smartphone {
     private String serialNumber;
-    private  String marca;
+    private String marca;
 
     public Smartphone(String serialNumber, String marca) {
         this.serialNumber = serialNumber;
@@ -23,6 +23,23 @@ public class Smartphone {
         return serialNumber != null && serialNumber.equals(smartphone.serialNumber);
     }
 
+    // se x.equals(y) == true, logo y.hashCode() == x.hashCode()
+    // y.hashCode() == x.hashCode() não necessariamente o equals de y.equals(x) tem que ser true. (não necessariamente o mesmo objeto)
+    // x.equals(y) == false, hashcode tem que ser diferente
+    // y.hashCode() != x.hashCode() x.euqals(y) deverá ser falso
+    @Override
+    public int hashCode() {
+        return serialNumber == null ? 0 : this.serialNumber.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return "Smartphone{" +
+                "serialNumber='" + serialNumber + '\'' +
+                ", marca='" + marca + '\'' +
+                '}';
+    }
+
     public String getSerialNumber() {
         return serialNumber;
     }
@@ -38,4 +55,6 @@ public class Smartphone {
     public void setMarca(String marca) {
         this.marca = marca;
     }
+
+
 }
