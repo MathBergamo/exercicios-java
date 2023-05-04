@@ -6,6 +6,7 @@ public class Manga implements Comparable<Manga> { //Comparable permite ordenar o
     private Long id;
     private String nome;
     private double preco;
+    private int quantidade;
 
     public Manga(Long id, String nome, double preco) {
         Objects.requireNonNull(id);
@@ -13,6 +14,11 @@ public class Manga implements Comparable<Manga> { //Comparable permite ordenar o
         this.id = id;
         this.nome = nome;
         this.preco = preco;
+    }
+
+    public Manga(Long id, String nome, double preco, int quantidade) {
+        this(id,nome,preco);
+        this.quantidade = quantidade;
     }
 
     public Long getId() {
@@ -39,6 +45,14 @@ public class Manga implements Comparable<Manga> { //Comparable permite ordenar o
         this.preco = preco;
     }
 
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -52,12 +66,14 @@ public class Manga implements Comparable<Manga> { //Comparable permite ordenar o
         return Objects.hash(id, nome, preco);
     }
 
+
     @Override
     public String toString() {
         return "Manga{" +
                 "id=" + id +
                 ", nome='" + nome + '\'' +
                 ", preco=" + preco +
+                ", quantidade=" + quantidade +
                 '}';
     }
 
